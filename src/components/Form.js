@@ -66,7 +66,6 @@ class Form extends React.Component {
             value={ cardAttr2 }
             onChange={ onInputChange }
           />
-          max 90 points
         </label>
         <label className="labels" htmlFor="cardAttr3">
           Força:
@@ -79,7 +78,6 @@ class Form extends React.Component {
             value={ cardAttr3 }
             onChange={ onInputChange }
           />
-          max 90 points
         </label>
         <label className="labels" htmlFor="cardImage">
           Url da imagem:

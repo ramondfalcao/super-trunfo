@@ -105,7 +105,6 @@ class App extends React.Component {
       cardList: filterCard,
       hasTrunfo: filterCard.some((card) => card.cardTrunfo),
     }));
-    // Consegui desenvolver esse requisito pelo codigo do Gabriel melo https://github.com/tryber/sd-019-a-project-tryunfo/pull/138/files :)
   }
 
   searchCard({ target }) {
