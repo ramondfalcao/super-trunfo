@@ -2,8 +2,9 @@ import React from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
 import CardList from './components/CardList';
-import CardSearch from './components/CardSearch';
+// import CardSearch from './components/CardSearch';
 import './app.css'
+
 
 class App extends React.Component {
   constructor() {
@@ -54,6 +55,8 @@ class App extends React.Component {
       cardRare: 'normal',
       cardTrunfo: false,
     }));
+
+    localStorage.setItem("mykey", event);
   }
 
   validateForm() {
@@ -137,12 +140,17 @@ class App extends React.Component {
       enableButton,
       isSaveButtonDisabled,
       buttonDelete,
-      search,
+      // search,
     } = this.state;
     return (
       <main>
         <header className="header">
+          <img className="logo" src="https://cdn-icons-png.flaticon.com/512/4072/4072251.png"/>
           <h1>Tryunfo</h1>
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
         </header>
         <section className="main-container">
           <section className="form-container">
@@ -163,6 +171,7 @@ class App extends React.Component {
           </section>
           <aside className="preview-container">
             <Card
+              classImg="img"
               cardName={ cardName }
               cardDescription={ cardDescription }
               cardAttr1={ cardAttr1 }
@@ -177,10 +186,10 @@ class App extends React.Component {
           </aside>
         </section>
         <section className="list-container">
-          <CardSearch
+          {/* <CardSearch
             searchCard={ this.searchCard }
             search={ search }
-          />
+          /> */}
           <CardList
             cardList={ cardList }
             cardName={ cardName }

@@ -10,8 +10,10 @@ class CardList extends React.Component {
     return (
       <section className="list-container">
         {cardList.map((card, i) => (
-          <div key={ i }>
+          <div className="card-saves" key={ i }>
             <Card
+              className="card-save"
+              classImg="img-save"
               key={ i }
               cardName={ card.cardName }
               cardDescription={ card.cardDescription }
@@ -26,6 +28,7 @@ class CardList extends React.Component {
             />
             <button
               type="button"
+              className="button-delete"
               data-testid="delete-button"
               value={ card.cardName }
               onClick={ buttonDelete }

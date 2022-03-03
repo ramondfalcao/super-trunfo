@@ -34,6 +34,7 @@ class Form extends React.Component {
         <label className="labels" htmlFor="cardDescription">
           description:
           <input
+            maxLength="150"
             data-testid="description-input"
             className="inputs"
             id="cardDescription"
