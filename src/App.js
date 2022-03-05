@@ -23,6 +23,7 @@ class App extends React.Component {
       cardList: [],
       search: '',
       isSaveButtonDisabled: true,
+      buttonDark: false,
     };
 
     this.onInputChange = this.onInputChange.bind(this);
@@ -140,17 +141,14 @@ class App extends React.Component {
       enableButton,
       isSaveButtonDisabled,
       buttonDelete,
+      buttonDark,
       // search,
     } = this.state;
     return (
       <main>
         <header className="header">
-          <img className="logo" src="https://cdn-icons-png.flaticon.com/512/4072/4072251.png"/>
           <h1>Tryunfo</h1>
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-          </label>
+          <img className="logo" src="https://cdn-icons-png.flaticon.com/512/4072/4072251.png"/>
         </header>
         <section className="main-container">
           <section className="form-container">

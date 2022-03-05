@@ -33,7 +33,7 @@ class CardList extends React.Component {
               value={ card.cardName }
               onClick={ buttonDelete }
             >
-              Delete
+              X
             </button>
           </div>
         ))}

@@ -19,13 +19,13 @@ class Card extends React.Component {
       <div className={`card-preview ${className}`}>
         <h2 data-testid="name-card">{ cardName }</h2>
         <img data-testid="image-card" className={ classImg } id="img-preview" src={ cardImage } alt={ cardName } />
-        <p data-testid="description-card">{ cardDescription }</p>
-        <p data-testid="attr1-card">{`Velocidade: ${ cardAttr1 }`}</p>
-        <p data-testid="attr2-card">{`Inteligencia: ${ cardAttr2 }`}</p>
-        <p data-testid="attr3-card">{`Força: ${ cardAttr3 }`}</p>
-        <p data-testid="rare-card">{ cardRare }</p>
+        <p className="description" data-testid="description-card">{ cardDescription }</p>
+        <p className="skills" data-testid="attr1-card">{`Velocidade: ${ cardAttr1 }`}</p>
+        <p className="skills" data-testid="attr2-card">{`Inteligencia: ${ cardAttr2 }`}</p>
+        <p className="skills" data-testid="attr3-card">{`Força: ${ cardAttr3 }`}</p>
+        <p id="rarity" data-testid="rare-card">{`Rarity: ${ cardRare }`}</p>
         {cardTrunfo && (
-          <p data-testid="trunfo-card">Super Trunfo ⭐</p>
+          <p id="super-trunfo" data-testid="trunfo-card">Super Trunfo ⭐</p>
         )}
       </div>
     );
