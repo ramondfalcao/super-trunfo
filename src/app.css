@@ -134,6 +134,18 @@ header{
     background-repeat: no-repeat;
 }
 
+.search{
+    text-align: center;
+}
+
+.search-bar{
+    width: 20%;
+    height: 25px;
+    border-radius: 5%;
+    border: 0;
+
+}
+
 .list-container{
     display: flex;
     flex-wrap: wrap;

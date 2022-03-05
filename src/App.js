@@ -4,6 +4,7 @@ import Card from './components/Card';
 import CardList from './components/CardList';
 // import CardSearch from './components/CardSearch';
 import './app.css'
+import CardSearch from './components/CardSearch';
 
 
 class App extends React.Component {
@@ -30,7 +31,7 @@ class App extends React.Component {
     this.onSaveButtonClick = this.onSaveButtonClick.bind(this);
     this.validateForm = this.validateForm.bind(this);
     this.buttonDelete = this.buttonDelete.bind(this);
-    // this.searchCard = this.searchCard.bind(this);
+    this.searchCard = this.searchCard.bind(this);
   }
 
   onInputChange({ target }) {
@@ -141,8 +142,7 @@ class App extends React.Component {
       enableButton,
       isSaveButtonDisabled,
       buttonDelete,
-      buttonDark,
-      // search,
+      search,
     } = this.state;
     return (
       <main>
@@ -183,11 +183,13 @@ class App extends React.Component {
             />
           </aside>
         </section>
-        <section className="list-container">
-          {/* <CardSearch
+        <div className="search">
+          <CardSearch
             searchCard={ this.searchCard }
             search={ search }
-          /> */}
+          />
+        </div>
+        <section className="list-container">
           <CardList
             cardList={ cardList }
             cardName={ cardName }

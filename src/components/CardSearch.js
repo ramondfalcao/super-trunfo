@@ -8,6 +8,7 @@ class CardSearch extends React.Component {
       <div>
         <label htmlFor="search">
           <input
+            className="search-bar"
             name="search"
             value={ search }
             onChange={ searchCard }
