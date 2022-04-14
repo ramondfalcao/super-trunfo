@@ -5,6 +5,7 @@
 
 ## Sobre o Projeto
 <p>O objetivo desse projeto é criar cards de trunfo personalizados e em tempo real.</p> 
+<a>https://ramondfalcao.github.io/super-trunfo/</a>
 
 ### 🛠 Tecnologias
 
