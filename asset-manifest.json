@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/super-trunfo/static/css/main.cd88e0e3.css",
+    "main.js": "/super-trunfo/static/js/main.1afa2c5f.js",
+    "index.html": "/super-trunfo/index.html",
+    "main.cd88e0e3.css.map": "/super-trunfo/static/css/main.cd88e0e3.css.map",
+    "main.1afa2c5f.js.map": "/super-trunfo/static/js/main.1afa2c5f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cd88e0e3.css",
+    "static/js/main.1afa2c5f.js"
+  ]
+}
