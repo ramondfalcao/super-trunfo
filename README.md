@@ -1,6 +1,6 @@
 <h1 align="center">Projeto Tryunfo</h1>
 
-![Imagem do Projeto Tryunfo](/src/img-projeto.png)
+![Imagem do Projeto Tryunfo](/src/img-projeto.svg)
 
 
 ## Sobre o Projeto
